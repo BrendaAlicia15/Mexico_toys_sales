@@ -1,0 +1,14 @@
+# Entorno virtual
+.venv/
+venv/
+ENV/
+
+# Base de datos local
+*.db
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/
