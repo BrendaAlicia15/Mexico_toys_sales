@@ -132,16 +132,13 @@ Ticket Promedio = DIVIDE([Total Ingresos], SUM(sales[Units]), 0)
 
 ---
 
-## 📊 Vista General del Dashboard
+ ## 📊 Vista General del Dashboard
 
 ### 1. Vista General de Rendimiento Comercial (Downtown)
-![Dashboard General](assets/foto1.jpg)
-
-
+![Dashboard General](https://github.com/BrendaAlicia15/Mexico_toys_sales/raw/developer/assets/foto1.jpg)
 
 ### 2. Análisis Segmentado por Ubicación (Residential)
-![Dashboard Segmentado](assets/foto2.jpg)
-
+![Dashboard Segmentado](https://github.com/BrendaAlicia15/Mexico_toys_sales/raw/developer/assets/foto2.jpg)
 
 ---
 
