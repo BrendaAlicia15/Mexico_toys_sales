@@ -145,6 +145,16 @@ Ticket Promedio = DIVIDE([Total Ingresos], SUM(sales[Units]), 0)
 3. Ubicación Estratégica: Las tiendas en zonas Downtown aportan la mayor proporción de facturación al grupo comercial, mientras que las ubicaciones Residential mantienen un ticket promedio consistente de $13.20.
 
 ---
+## 📊 Vista General del Dashboard
+
+### 1. Vista General de Rendimiento Comercial (Downtown)
+![Dashboard General](assets/foto1.jpg)
+
+### 2. Análisis Segmentado por Ubicación (Residential)
+![Dashboard Segmentado](assets/foto2.jpg)
+
+
+---
 
 ## 🧰 Tecnologías Utilizadas
 
