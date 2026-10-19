@@ -91,20 +91,6 @@ El objetivo principal es brindar visibilidad a la alta dirección sobre el volum
 
 ---
 
-## 📊 Vista General del Dashboard
-
-### 1. Vista General de Rendimiento Comercial (Filtro: Downtown)
-> Muestra el rendimiento global enfocado en las sucursales ubicadas en zonas céntricas, alcanzando $8.22M en ingresos y 628.07K unidades vendidas.
-
-![Dashboard General - Downtown](foto1.jpg)
-
-### 2. Análisis Segmentado por Ubicación (Filtro: Residential)
-> Demuestra la capacidad interactiva del tablero filtrando únicamente tiendas en zonas residenciales ($1.66M en ingresos distribuidos en 6 sucursales).
-
-![Dashboard Segmentado - Residential](foto2.jpg)
-
----
-
 ## 🛠️ Arquitectura del Modelo de Datos (Esquema en Estrella)
 
 El modelo relacional fue estructurado siguiendo las mejores prácticas de Inteligencia de Negocios en un **Esquema en Estrella** (*Star Schema*):
@@ -145,17 +131,14 @@ Ticket Promedio = DIVIDE([Total Ingresos], SUM(sales[Units]), 0)
 3. Ubicación Estratégica: Las tiendas en zonas Downtown aportan la mayor proporción de facturación al grupo comercial, mientras que las ubicaciones Residential mantienen un ticket promedio consistente de $13.20.
 
 ---
+
 ## 📊 Vista General del Dashboard
 
- <p align="center">
-  <b>1. Vista General de Rendimiento Comercial (Downtown)</b><br>
-  <img src="assets/foto1.jpg" alt="Dashboard General - Downtown" width="800px">
-</p>
+### 1. Vista General de Rendimiento Comercial (Downtown)
+![Dashboard General](assets/foto1.jpg)
 
-<p align="center">
-  <b>2. Análisis Segmentado por Ubicación (Residential)</b><br>
-  <img src="assets/foto2.jpg" alt="Dashboard Segmentado - Residential" width="800px">
-</p>
+### 2. Análisis Segmentado por Ubicación (Residential)
+![Dashboard Segmentado](assets/foto2.jpg)
 
 ---
 
