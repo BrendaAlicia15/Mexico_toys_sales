@@ -1,3 +1,12 @@
+# 🧸 Mexico Toys Sales Analytics | Dashboard Ejecutivo en Power BI
+
+![Power BI](https://img.shields.io/badge/Power_BI-Desktop-F2C94C?style=for-the-badge&logo=powerbi&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![DAX](https://img.shields.io/badge/DAX-Measures-0078D4?style=for-the-badge)
+
+
+
 # 🇲🇽 Mexico Toy Sales: Análisis de Negocio y Segmentación
 
 Proyecto integral de análisis de datos, ingeniería y business intelligence enfocado en el rendimiento comercial de la cadena **Maven Toys** en México. Este repositorio documenta el flujo de trabajo completo, desde la gestión de bases de datos relacionales y scripts en Python hasta la segmentación de tiendas y la visualización ejecutiva en Power BI.
@@ -66,14 +75,6 @@ Bash
 python src/segmentacion_tiendas.py
 
 ---
-
-# 🧸 Mexico Toys Sales Analytics | Dashboard Ejecutivo en Power BI
-
-![Power BI](https://img.shields.io/badge/Power_BI-Desktop-F2C94C?style=for-the-badge&logo=powerbi&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![DAX](https://img.shields.io/badge/DAX-Measures-0078D4?style=for-the-badge)
-
 
 ## 📈 Dashboard Interactivo (Power BI)
 El modelo de datos y las métricas calculadas se integran en un reporte interactivo estructurado en tres niveles:
