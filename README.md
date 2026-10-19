@@ -91,20 +91,6 @@ El objetivo principal es brindar visibilidad a la alta dirección sobre el volum
 
 ---
 
-## 📊 Vista General del Dashboard
-
-### 1. Vista General de Rendimiento Comercial (Filtro: Downtown)
-> Muestra el rendimiento global enfocado en las sucursales ubicadas en zonas céntricas, alcanzando $8.22M en ingresos y 628.07K unidades vendidas.
-
-![Dashboard General - Downtown](foto1.jpg)
-
-### 2. Análisis Segmentado por Ubicación (Filtro: Residential)
-> Demuestra la capacidad interactiva del tablero filtrando únicamente tiendas en zonas residenciales ($1.66M en ingresos distribuidos en 6 sucursales).
-
-![Dashboard Segmentado - Residential](foto2.jpg)
-
----
-
 ## 🛠️ Arquitectura del Modelo de Datos (Esquema en Estrella)
 
 El modelo relacional fue estructurado siguiendo las mejores prácticas de Inteligencia de Negocios en un **Esquema en Estrella** (*Star Schema*):
@@ -143,6 +129,16 @@ Ticket Promedio = DIVIDE([Total Ingresos], SUM(sales[Units]), 0)
 2. Distribución por Categoría: La categoría Toys concentra la mayor participación de mercado (~35.85%), seguida de Art & Crafts (~19.52%) y Electronics (~15.52%).
 
 3. Ubicación Estratégica: Las tiendas en zonas Downtown aportan la mayor proporción de facturación al grupo comercial, mientras que las ubicaciones Residential mantienen un ticket promedio consistente de $13.20.
+
+---
+
+ ## 📊 Vista General del Dashboard
+
+### 1. Vista General de Rendimiento Comercial (Downtown)
+![Dashboard General](https://github.com/BrendaAlicia15/Mexico_toys_sales/raw/developer/assets/foto1.jpg)
+
+### 2. Análisis Segmentado por Ubicación (Residential)
+![Dashboard Segmentado](https://github.com/BrendaAlicia15/Mexico_toys_sales/raw/developer/assets/foto2.jpg)
 
 ---
 
