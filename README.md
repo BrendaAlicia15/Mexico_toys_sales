@@ -5,6 +5,15 @@
 ![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 ![DAX](https://img.shields.io/badge/DAX-Measures-0078D4?style=for-the-badge)
 
+## 📊 Vista General del Dashboard
+
+### 1. Vista General de Rendimiento Comercial (Downtown)
+![Dashboard General](https://github.com/BrendaAlicia15/Mexico_toys_sales/raw/developer/assets/foto1.jpg)
+
+
+### 2. Análisis Segmentado por Ubicación (Residential)
+![Dashboard Segmentado](https://github.com/BrendaAlicia15/Mexico_toys_sales/raw/developer/assets/foto2.jpg)
+
 
 
 # 🇲🇽 Mexico Toy Sales: Análisis de Negocio y Segmentación
