@@ -153,6 +153,13 @@ Ticket Promedio = DIVIDE([Total Ingresos], SUM(sales[Units]), 0)
 ### 2. Análisis Segmentado por Ubicación (Residential)
 ![Dashboard Segmentado](assets/foto2.jpg)
 
+<p align="center">
+  <img src="assets/foto1.jpg" alt="Dashboard General - Downtown" width="800px">
+</p>
+
+<p align="center">
+  <img src="assets/foto2.jpg" alt="Dashboard Segmentado - Residential" width="800px">
+</p>
 
 ---
 
