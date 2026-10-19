@@ -67,6 +67,14 @@ python src/segmentacion_tiendas.py
 
 ---
 
+# 🧸 Mexico Toys Sales Analytics | Dashboard Ejecutivo en Power BI
+
+![Power BI](https://img.shields.io/badge/Power_BI-Desktop-F2C94C?style=for-the-badge&logo=powerbi&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![DAX](https://img.shields.io/badge/DAX-Measures-0078D4?style=for-the-badge)
+
+
 ## 📈 Dashboard Interactivo (Power BI)
 El modelo de datos y las métricas calculadas se integran en un reporte interactivo estructurado en tres niveles:
 
@@ -74,7 +82,76 @@ Resumen Ejecutivo: KPIs globales de ingresos, unidades y evolución temporal.
 
 Segmentación de Tiendas: Vista comparativa frente a la línea base de rendimiento y filtros por tipo de ubicación (Downtown, Commercial, Residential).
 
-Productos Críticos: Identificación del Bottom 10 de artículos para la toma de decisiones de inventario.
+
+## 📌 Descripción del Proyecto
+Este proyecto desarrolla un **Tablero de Control Ejecutivo e Interactivo en Power BI** para analizar el rendimiento comercial y la distribución geográfica de una cadena nacional de tiendas de juguetes en México.
+
+El objetivo principal es brindar visibilidad a la alta dirección sobre el volumen de ventas, el cumplimiento del rendimiento esperado por sucursal (*Benchmark*) y el comportamiento del inventario según la categoría de producto y la ubicación geográfica de las tiendas.
+
+---
+
+## 📊 Vista General del Dashboard
+
+### 1. Vista General de Rendimiento Comercial (Filtro: Downtown)
+> Muestra el rendimiento global enfocado en las sucursales ubicadas en zonas céntricas, alcanzando $8.22M en ingresos y 628.07K unidades vendidas.
+
+![Dashboard General - Downtown](foto1.jpg)
+
+### 2. Análisis Segmentado por Ubicación (Filtro: Residential)
+> Demuestra la capacidad interactiva del tablero filtrando únicamente tiendas en zonas residenciales ($1.66M en ingresos distribuidos en 6 sucursales).
+
+![Dashboard Segmentado - Residential](foto2.jpg)
+
+---
+
+## 🛠️ Arquitectura del Modelo de Datos (Esquema en Estrella)
+
+El modelo relacional fue estructurado siguiendo las mejores prácticas de Inteligencia de Negocios en un **Esquema en Estrella** (*Star Schema*):
+
+* **`sales` (Tabla de Hechos):** Transacciones individuales conteniendo `Sale_ID`, `Date`, `Store_ID`, `Product_ID` y `Units`.
+* **`stores` (Dimensión):** Información de las 29 sucursales únicas, incluyendo `Store_Name`, `Store_City`, `Store_Location` (Airport, Commercial, Downtown, Residential) y fecha de apertura.
+* **`products` (Dimensión):** Catálogo de productos detallado por `Product_Name`, `Product_Category`, costo y precio de venta.
+* **`calendar` (Dimensión):** Tabla de tiempo jerárquica para análisis temporal.
+* **`inventory` (Dimensión):** Niveles de existencias por producto y sucursal.
+
+---
+
+## 🧮 Medidas DAX Implementadas
+
+Se crearon métricas avanzadas en DAX para el análisis del negocio:
+
+* **Total Ingresos:**
+  ```dax
+  Total Ingresos = SUMX(sales, sales[Units] * RELATED(products[Product_Price]))
+
+Promedio Tienda Benchmark:
+Promedio Tienda Benchmark = 288891.45
+
+Ticket Promedio:
+Ticket Promedio = DIVIDE([Total Ingresos], SUM(sales[Units]), 0)
+
+% vs Benchmark:
+% vs Benchmark = DIVIDE([Total Ingresos], [Promedio Tienda Benchmark] * DISTINCTCOUNT(stores[Store_ID]), 0)
+
+---
+
+## 🚀 Key Business Insights (Principales Hallazgos)
+
+1. Desempeño por Sucursales: La sucursal Maven Toys Ciudad de México 1 lidera las ventas a nivel nacional superando significativamente la línea de Benchmark ($288.89K).
+
+2. Distribución por Categoría: La categoría Toys concentra la mayor participación de mercado (~35.85%), seguida de Art & Crafts (~19.52%) y Electronics (~15.52%).
+
+3. Ubicación Estratégica: Las tiendas en zonas Downtown aportan la mayor proporción de facturación al grupo comercial, mientras que las ubicaciones Residential mantienen un ticket promedio consistente de $13.20.
+
+---
+
+## 🧰 Tecnologías Utilizadas
+
+Power BI Desktop: Modelado de datos, creación de medidas DAX, maquetación UI/UX y maquetación de gráficos dinámicos.
+
+SQLite / CSV: Fuente de origen y procesamiento de datos tabulares.
+
+Git & GitHub: Control de versiones y documentación del proyecto.
 
 ---
 
@@ -84,3 +161,4 @@ El desarrollo del proyecto se administra mediante flujos de ramas en Git:
 main: Rama de producción y entregas estables.
 
 developer: Rama activa para integración de scripts de Python, consultas SQL y validaciones de datos.
+
