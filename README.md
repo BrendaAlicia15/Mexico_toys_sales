@@ -137,15 +137,11 @@ Ticket Promedio = DIVIDE([Total Ingresos], SUM(sales[Units]), 0)
 ### 1. Vista General de Rendimiento Comercial (Downtown)
 ![Dashboard General](assets/foto1.jpg)
 
-<img width="1093" height="627" alt="foto1" src="https://github.com/user-attachments/assets/52f7868a-938c-4da7-bda4-15a17cfd0f2e" />
-
 
 
 ### 2. Análisis Segmentado por Ubicación (Residential)
 ![Dashboard Segmentado](assets/foto2.jpg)
 
-
-<img width="1109" height="622" alt="foto2" src="https://github.com/user-attachments/assets/a1afda1b-93b8-4f45-aa84-223697bb555e" />
 
 ---
 
